@@ -1,14 +1,21 @@
 ---
-layout: post
-title: "Your Post Title"
-date: 2023-09-24
+layout: page
+title: "🏠"
+feature_image: "uploads/feature-image.jpeg"
 ---
 
-# Introduction
-This is a brief introduction to the topic of the post.
+### Hi, I'm Eldrick Wega - Thanks for dropping by! 👋🏾
 
-# Main Content
-This is where the main content of the post goes.
+I'm a Cameroonian/Malian Solutions Engineer at GitHub, currently based out of Toronto. 
 
-# Conclusion
-This is the conclusion of the post.
+I'm passionate about a couple of things: building products with people, development of the African continent, economic systems, and jumping rope!
+
+### What I'm up to 👨🏾‍💻
+
+You can check out some of the projects I've worked on. Lately I've been focusing on "Africa-Travel":
+
+### What I'm thinking about 🤔
+
+I'll write thoughts and theories on a bunch of random things. But here's a few of the latest ones:
+
+
