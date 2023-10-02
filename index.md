@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "🏠"
-feature_image: "uploads/feature-image.jpeg"
+feature_image: "assets/feature-image.jpeg"
 ---
 
 ### Hi, I'm Eldrick Wega - Thanks for dropping by! 👋🏾
