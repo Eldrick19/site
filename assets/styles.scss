@@ -1,0 +1,44 @@
+--- 
+title: false 
+styles: true 
+--- 
+
+.feature {
+    position: relative;
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+}
+
+.feature::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Change the color and opacity as needed */
+}
+
+.logo {
+    display: inline-block;
+    line-height: 0;
+    max-height: 4rem;
+
+    img {
+        max-height: 5rem;
+        border-radius: 50%;
+    }
+
+}
+
+// Background colours
+$featureBackgroundColour: rgba(0, 0, 0, 0.7) !default;
+$accentColour: #D2B48C !default;
+
+
+// Text colours
+$linkColour: #D2B48C !default;
+$hoverColour: #654321 !default;
+
+@import "alembic";
