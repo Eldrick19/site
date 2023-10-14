@@ -1,0 +1,17 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Jekyll",
+    "image": "ruby:3.0.2",
+    "extensions": [
+        "rebornix.Ruby"
+    ],
+    "settings": {
+        "ruby.useBundler": true,
+        "terminal.integrated.shell.linux": "/bin/zsh" // Set zsh as the default shell
+    },
+    "appPort": 4000,
+    "postCreateCommand": "bundle install && bundle exec jekyll serve --host 0.0.0.0",
+    "mounts": [
+        "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=cached"
+    ]
+}
