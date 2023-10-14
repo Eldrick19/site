@@ -1,6 +1,3 @@
-email: eldrick.wega@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Eldrick's Digital Footprint. A place where I share my thoughts and theories
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  eldrick19
@@ -79,8 +76,8 @@ collections:
     output: true
     description: "My thoughts and ideas" # The post list page content
     feature_text: |
-      Welcome to the blog
-    feature_image: "assets/feature-image.jpeg"
+      Thoughts & Theories
+    feature_image: "../assets/village.jpeg"
 
 # 6. Jekyll collections settings
 defaults:
@@ -106,7 +103,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "Eldrick's Digital Footprint" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/headshot.png" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
 url: "eldrick19.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
@@ -118,7 +115,7 @@ email: "eldrick.wega@gmail.com"
 # google_analytics_anonymize_ip: ""
 # service_worker: false # Will turn off the service worker if set to false
 # short_name: "Al" # The web application short name, defaults to the site title
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+# css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
@@ -157,6 +154,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
+  LinkedIn: "#0077b5"
   facebook: "#3B5998"
   Email: true
 
