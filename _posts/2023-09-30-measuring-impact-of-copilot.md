@@ -53,7 +53,7 @@ A great analogy for Developer Velocity is [rowboat team](https://colinsalmcorner
 
 Developer Productivity is one of the important nodes of Velocity, just as the first rower is to a successful rowboat race, but it is not the only thing that impacts it.
 
-![Developer Velocity](/assets/blog/2023-09-30-measuring-impact-of-copilot/developer-velocity.png)
+![Developer Velocity]({{ site.baseurl }}/assets/blog/2023-09-30-measuring-impact-of-copilot/developer-velocity.png)
 
 How do I measure the effectiveness of Copilot?
 ----------------------------------------------
@@ -92,13 +92,13 @@ Although we want hard data as much as possible personalized to us, we have seen 
 
 As part of our GitHub Copilot study mentioned earlier, we emphasized the importance of getting qualitative feedback from developers. On top of actually measuring task speed improvements, we got insight from developers via survey:
 
-![Developer Survey](/assets/blog/2023-09-30-measuring-impact-of-copilot/developer-survey.png)
+![Developer Survey]({{ site.baseurl }}/assets/blog/2023-09-30-measuring-impact-of-copilot/developer-survey.png)
 
 These questions are based on the [SPACE framework](https://queue.acm.org/detail.cfm?id=3454124), which is a framework we use at GitHub to think about Developer Productivity. SPACE (Satisfaction and well-being, Performance, Activity, Communication and collaboration, and Efficiency and flow) shows us that how developers feel about development has a high correlation with their productivity.
 
 This is why organizations are investing into [Developer Experience (DX) teams](https://github.blog/2023-06-08-developer-experience-what-is-it-and-why-should-you-care/#:~:text=DevEx%20refers%20to%20the%20systems,%2C%20satisfaction%2C%20and%20operational%20impact.): Happier developers are more productive developers.
 
-![SPACE Framework](/assets/blog/2023-09-30-measuring-impact-of-copilot/space-framework.png)
+![SPACE Framework]({{ site.baseurl }}/assets/blog/2023-09-30-measuring-impact-of-copilot/space-framework.png)
 
 
 
@@ -106,7 +106,7 @@ The SPACE framework is an extremely valuable way of operating, as it provides me
 
 On top of metrics you are already tracking for Velocity, developing a detailed survey for your developers throughout the Copilot adoption process will help gain an understanding of how effective the tool actually is. Here is a sample survey to get started:
 
-![Copilot Questions](/assets/blog/2023-09-30-measuring-impact-of-copilot/copilot-questions.png)
+![Copilot Questions]({{ site.baseurl }}/assets/blog/2023-09-30-measuring-impact-of-copilot/copilot-questions.png)
 
 #### 4\. Qualitative Data - Shifting surveys left
 
