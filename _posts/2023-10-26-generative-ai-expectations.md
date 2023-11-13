@@ -1,5 +1,5 @@
 ---
-title: "Generative AI, setting expectations and what's actually different this time"
+title: "GenAI - Setting Expectations"
 categories:
 - GitHub
 ---
@@ -8,44 +8,64 @@ So! You're either evaluating or have started using a generative AI tool for your
 
 I've been having discussions about generative AI A LOT recently. I'm a Solutions Engineer at GitHub, and that means I get to work with customers as they're evaluating [GitHub Copilot](https://github.com/features/copilot). If you're not familiar, we're explaining it as an AI pair programmer that will help developers write better code faster. My experience has mostly been with GitHub Copilot, but I think what I'm going to discuss today applies to any type of generative AI. I've played with Bard, Bing AI, and some image generation ones (Canva AI). I'll call out any caveats if necessary.
 
-I might make follow up posts on this one because this technology is so new, has had a ton of buzz, and is rapidly evolving. But what my goal is here is to give a clearer picture on what I think you should be expecting with GenAI - either as a decision maker or a user of it in the professional sense. I've learned a lot talking to people I consider leaders on the subject (@ryansalva, @mattg) but these opinions are my own. The TLDR: GenAI is technology that is meant to make you more productive, not be perfect. It will get you a % of the way to your destination, but cannot make that journey alone. The best use cases are suggestive and not authoritative.
+I might make follow up posts on this one because this technology is so new, has had a ton of buzz, and is rapidly evolving. But what my goal is here is to give a clearer picture on what I think you should be expecting with GenAI - either as a decision maker or a user of it in the professional sense. I've learned a lot talking to people I consider leaders on the subject (@ryanjsalva, Matt Gunther, ..) but these opinions are my own. 
 
-Let's dive a little deeper into this
+The TLDR: GenAI is technology that is meant to make you more productive, not be perfect. It will get you a % of the way to your destination, but cannot make that journey alone. The best use cases are suggestive and not authoritative.
+
+Let's dive a little deeper into this.
 
 Different applications of AI
 -----------
 
-GenAI is only one application of the AI umbrella. That's important to remember and sometimes gets lost in the hype. AI has been around for a while in various forms and applications. Let's take a look at a few
+GenAI is only one application of the AI umbrella. That's important to remember and sometimes gets lost in the hype. AI has been around for a while in various forms and applications. From computer vision to education tailoring - these applications are bountiful and have been used to varying degrees in almost every industry. In my opinion, wherever you look with AI, you can separate its application as either:
 
-## Recommendation Systems
+- Suggestive
+- Authoritative
+- (Bonus) Mixture of both
+
+To get my point across. Let's look at 2 different applications of predictive machine learning: Recommendation Systems and Prediction Algorithms
+
+### Recommendation Systems
 
 Recommendation systems, which have such a strong impact on us as individuals in the decisions we make, thing we buy, and even our social opinions are so embedded into society that we see their functionality as banal today. But this is an extremely powerful form of AI - if not the [most valuable $ wise](https://towardsdatascience.com/recommender-systems-the-most-valuable-application-of-machine-learning-part-1-f96ecbc4b7f5).
 
 The almighty "algorithm". Whether it's TikTok's crazy algorithm that is able to seize the attention of anyone that spends more than a couple of minutes or Amazon's system based on [item-to-item collaborative filtering](https://www.amazon.science/the-history-of-amazons-recommendation-algorithm) (fascinating read by the way), this is embedded in so many platform tools.
 
-The use case of Recommendation Systems, from the end user's perspective, is suggestive. It's particularly useful to have the app you're using suggest products/services from an overwhelming catalogue of things you can choose from. But from the business perspective - the "output" of this application of AI is authoritative. You are trusting your algorithm to output something (a suggestion) directly to the end user without human vetting. This suggestion is usually distilled to something simple - i.e. the product-id that is most likely to be purchased. For this reason Recommendation Systems have to be particularly tuned and you have teams who's entire job is evaluating their performance and optimizing it to increase certain metrics. Keep this authoritative aspect in mind as we loop back to GenAI.
+The use case of Recommendation Systems, from the end user's perspective, is **suggestive**. It's particularly useful to have the app you're using suggest products/services from an overwhelming catalogue of things you can choose from. As a business developing these systems, you are trusting your algorithm to output something (a suggestion) directly to the end user without human vetting. This suggestion is usually distilled to something simple - i.e. the product-id that is most likely to be purchased.
 
-One of the things I worked on as a Product intern at Credit Karma was literally this. The Recommendation Systems (RecSys) team at the time constituted of ~7 engineers working directly on the data ingestion and algorithm tuning, with a couple others working on optimization of responses. The team's goal was implementing this across all relevant products and continuously improving the performance of these models. We were involved in all verticals because of the criticality of RecSys to the business of Credit Karma - suggesting the right cards/loans/etc. to uses looking to improve their credit score.
+I consider an AI output to be suggestive especially if the risk of it's output is low and can easily be ignored. When Amazon suggests a specific screen protector alongside a phone case, the potential damage of a user seeing that suggestion and not agreeing with it is extremely low. At worst, a wrong suggestion is mild annoyance. At best, they buy another new product. It's low risk.
+
+Of course, you wouldn't want a a recommendation system that has consistently poor outputs and gets users mildly annoyed, very annoyed, and churning. But for each individual product, you are risking very little. In fact, the lack of interaction with a suggestion in itself can be used to further train the algorithm - a benefit in itself. 
+
+Keep this suggestive aspect in mind as we loop back to GenAI.
+
+<!-- One of the things I worked on as a Product intern at Credit Karma was literally this. The Recommendation Systems (RecSys) team at the time constituted of ~7 engineers working directly on the data ingestion and algorithm tuning, with a couple others working on optimization of responses. The team's goal was implementing this across all relevant products and continuously improving the performance of these models. We were involved in all verticals because of the criticality of RecSys to the business of Credit Karma - suggesting the right cards/loans/etc. to users looking to improve their credit score. -->
 
 
-## Natural Language Processing (NLP)
+### Prediction Algorithms
 
-When Siri released on the iPhone 4S in 2011 I remember feeling as a teenager like we had crossed a huge milestone. We would finally have our personal Jarvis-like assistant at the palm of our hands! An AI companion we could chat with, have it do some tasks for us, and with deep access to the internet. Sounds familiar to our reaction to ChatGPT doesn't it?
+Recommendations systems, mentioned above, are just one application of predictive machine learning. Using vast amounts of data to predict an output is not unique to just buying product or watching fun videos. 
 
-The reality is Siri was a commercial application of NLP, along with speech recognition (or speech to text. Without getting too much into the details (IBM has a decent description [here](https://www.ibm.com/topics/natural-language-processing#:~:text=the%20next%20step-,What%20is%20natural%20language%20processing%3F,same%20way%20human%20beings%20can.)) NLP will transform human language to specific action to be taken or tasks to do. It is a form of machine learning that extracts meaning from words (semantics) which can be used to do specific instructions. E.g.: "Hey Alexa, can you order me a can opener as soon as possible regardless of shipping price?" -> "Search: Can Opener, Select: Highest-rated option, Shipping details: Soonest". This is an oversimplification of the number of inputs/outputs any NLP system actually deals with but it gets the point across. Distill information into something a computer can understand and execute on.
+Under the umbrella of AI sits predictive machine learning, and under that umbrella sits prediction algorithms. These are usually used by businesses and don't involve creating an output for an end user to interact with. They are also higher risk.
 
-Again, the I want to call out here how NLP has been used for the businesses that have implemented them into products - Google Assistant, Siri, etc. The approach is authoritative. Apple trusts their NLP algorithms to correctly interpret the requests from end users and to execute on them. That's not even considering the speech to text portion of these applications, which also puts conversion of sounds heard from an audio input into words a computer can hear in the hands of an ML algorithm without a human from Apple checking it's output.
+One common example is insurance. Insurance companies (e.g. Liberty Mutual, Sun Life) have very much adopted using predictive models to determine things like the premiums charged to claimants. They will use huge amounts of data which include a variety of factors: race, gender, credit score, financial activity, and more. Determining the price of insurance for an individual, and if that person gets insurance in the first place is an **authoritative** application of AI. It is high risk and can have very severe impacts on both the affected individual and the business. What happens if someone is [refused insurance or charged a premium they should qualify for](https://www.healthaffairs.org/doi/10.1377/hlthaff.2021.01287)? A high-risk decision is made by the machine and not just suggested to the individual affected.
 
-There are a variety of other applications of AI, but I think this helps me get my point across. With AI/ML so far we have been able to create hyper-tailored algorithms that use a huge trained data set to perform a specific tasks (prediction or getting instructions from natural language). 
+Another example is in Finance. Banks are using prediction algorithms in the form of neural networks to automatically detect and flag charges outside the norm - with sometimes these applications going the full way and blocking credit cards/accounts of an end user based on activity. In these cases again, we see an **authoritative** approach. The AI application is not just determining an outcome based on a huge dataset (fraudulent vs not fraudulent charge), it can go all the way and be given permissions to make a higher risk action without human vetting. In the case where the application just flags this to an internal employee, I would consider it a suggestive approach. 
 
-So what's new here?
+There are a [variety of other applications of AI](https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence#Finance), but I think this helps me get my point across. With AI/ML so far we have been able to create applications that can either suggest outputs to users which are low risk, or use these outputs to themselves perform high risk actions. So revisiting our buckets:
+
+- Suggestive: augment human ability by processing a ton of information, outputting a result to a person, and letting this person make a decision and take action. 
+
+- Authoritative: bypass human input by processing information, outputting a result, and making decision/take action based on this result.
+
+So what's new here, where does GenAI fall?
 --------------------
 
-Generative AI itself is a huge step, but for slightly different reasons in my opinion. With the use of LLMs as their foundational layer, Generative AI applications are able to not only understand human input (usually using NLP in some form), but create what could be considered net new content in the form of text, images, or even video. This is huge. 
+Generative AI itself is a huge step, mainly as a new powerful application of AI. With the use of LLMs as their foundational layer, Generative AI applications are able to not only understand human input (usually using NLP in some form), but create what could be considered net new content in the form of text, images, or even video. This is huge. 
 
-Each of these mediums mentioned earlier (text, image, video, speech, etc.) are extremely complex, and objectivity of the correct "output" here is very difficult (if not impossible) to teach a computer.
+Each of these modalities mentioned earlier (text, image, video, speech, etc.) are extremely complex, and objectivity of the correct "output" here is even more difficult to reliably teach a computer.
 
-What do I mean by this? It is straightforward, albeit difficult, to teach an algorithm that a video-id should be shown next to a TikTok user. You're basing that decision on a ton of information (video category, user details, etc.) but the output is distilled to something specific: video-id that will increase X metric (usually engagement). The potential risk of a wrong decision here is also low, as the worst case is the user just moves on to the next video and gives your more information.
+What do I mean by this? It is straightforward, albeit difficult, to teach an algorithm that a video-id should be shown next to a TikTok user. You're basing that decision on a ton of information (video category, user details, etc.) but the output is distilled to something specific: video-id that will increase X metric (usually engagement). The potential risk of a wrong decision here is also low as mentioned earlier, as the worst case is the user just moves on to the next video and gives your more information.
 
 Generating a legal document based on requirements passed on by an end-user is a much more difficult thing to teach an AI to do correctly in an objective manner though. And that's not even considering the risk of the AI missing some use cases and allowing for legal loopholes or potentially putting the user in a precarious legal position. Generating content based on a provided input can be very subjective, and the impacts are far greater than other forms of AI depending on how it's used.*
 
@@ -55,7 +75,9 @@ If you're not familiar with how GenAI tools like ChatGPT work, it's a very decep
 
 Generative Adversarial Networks (GANs) get around this problem somewhat. Vetting any output (or having a "check" as part of the model) is especially useful when creating image content. But not everyone is implementing especially when it comes to text based content. You can read more about GANs [here](https://github.blog/2023-04-07-what-developers-need-to-know-about-generative-ai/).
 
-My point is this: generating content is not only subjective and a higher level of complexity than other applications of AI in the past, it's impacts and risks are also immediately apparent to the end user. For these 2 reasons, GenAI's applications are *suggestive*. It would not be responsible to expect it to do anything more than suggesting outputs at this time.
+My point is this: generating content is not only subjective and a higher level of complexity than other applications of AI in the past, it's impacts and risks are also immediately apparent to the end user. For these 2 reasons, GenAI's applications today are mostly **suggestive**. It would not be responsible to expect it to do anything more than suggesting outputs at this time.
+
+This will likely change in the future as we gain confidence in these LLMs, but if and when this is viable is a question I don't have the answer to.
 
 
 What to know about my suggestion machine?
@@ -63,7 +85,7 @@ What to know about my suggestion machine?
 
 Given all this background on its risks, and use cases, is it even useful? Yes, tremendously, so long as you realize what the purpose is: 
 
-GenAI today is made to make you more productive. That's really it. 
+> GenAI today is made to make you more productive. That's really it.
 
 Let's take a look at how it helps you accomplish faster:
 
@@ -82,7 +104,7 @@ The prompt is how you ask the AI what to do, the instructions you pass. Prompts 
 
 ## Can rough drafts be perfect?
 
-With these 3 data sources you're off to the races. The GenAI tool will use it's powerful neural network to output what it thinks meets best your needs. Here is where the main expectation-setting comes in: **you should treat any output as a rough draft**.
+With these 3 data sources you're off to the races. The GenAI tool will use it's powerful neural network to output what it thinks meets best your needs. Here is where the main expectation-setting comes in: **you should treat any output as n initial, rough draft**.
 
 From conversations with developers (friends, colleagues, and customers alike), a common misconception I'm seeing is the immediate comparison between these tools and human developers.
 
@@ -94,9 +116,9 @@ It would not be honest for an application to claim AI-generated content to be ab
 
 As a worker therefore, I expect GenAI to be used to create rough drafts of the any final product I'm working on, with me going through that draft and making the necessary adjustments. When evaluating if any of these tools is useful to me then, the mathematical theory I'm trying to validate is:
 
-Prompting + Suggestion Time + Vetting Time <= Time to do it myself
+> Prompting + Suggestion Time + Vetting Time <= Time to do it myself
 
-If the some of them time it takes for me to explain to the AI what I want it to do, the time it takes to process and respond, and the time it takes for me to vet the first draft is less than the time it takes me to do it myself - there is value. This is why I say GenAI tools are productivity tools first and foremost, the goal is to make you accomplish your goals faster. 
+If the sum of them time it takes for me to explain to the AI what I want it to do, the time it takes to process and respond, and the time it takes for me to vet the first draft is less than the time it takes me to do it myself - there is value. This is why I say GenAI tools are productivity tools first and foremost, the goal is to make you accomplish your goals faster. 
 
 This is also the claim companies selling GenAI tools are making, and the evidence from [research is more and more leaning towards this being true](https://www.forbes.com/sites/glenngow/2023/07/02/chatgpt-and-generative-ai-what-to-do-with-all-the-productivity/?sh=401bcd973edc).
 
@@ -112,6 +134,8 @@ These side effects, in my opinion, arise from use cases with this application of
 - Content Generation
 - Content Synthesis
 
+As you can tell I like breaking things into categories :)
+
 GenAI is still creating something new every time based on your prompt, and it helps with the productivity formula I showed earlier for both.
 
 The improvements in things like code quality though come from the second bucket: Content Synthesis. If it takes less time for me to ask an AI tool how to best implement something, or what the summary of what I'm looking at does, it can make me a better ___ faster. GitHub Copilot can help me become a better developer faster, for example, by speeding up the synthesis of new information, leading me to write better code. 
@@ -123,26 +147,16 @@ Again the uses cased I'm referring to are code related due to where I work, but 
 Conclusion
 ----------
 
-I think GenAI tools are here to stay, and will be used by more and more workers as they become more accessible. The main thing to keep in mind is that they are productivity tools, and should be treated as such. When [evaluating](https://eldrick19.github.io/site/github/2023/09/30/measuring-impact-of-copilot/) such tools, remember that they do not have the context today that you have over your task and what you need to do. 
+I think GenAI tools are here to stay, and will be used by more and more workers as they become more accessible. The main thing to keep in mind is that they are productivity tools, and should be treated as such. When [evaluating](https://eldrick19.github.io/site/github/2023/09/30/measuring-impact-of-copilot/) such tools, remember that they do not have the full context today that you have over your task and what you need to do. They do not have your memory and learnings that help them make decisions.
 
 Where does this lead us to? People have a lot of ideas but they're just opinions as of now. Here are mine:
 
-The democratization of AI is significant. It's no longer a technology reserved for the tech-savvy or Amazon. Today, anyone can leverage the power of AI to enhance their work, learn new concepts, and iterate faster. 
+The easier access to AI is significant. It's no longer a technology reserved for the tech-savvy or Amazon. Today, anyone can leverage the power of AI to enhance their work, learn new concepts, and iterate faster. 
 
 As we are able to feed these tools more context, and be more confident on the outputs, our relationship to how we generate and synthesize content will dramatically change. But that's not for now. I'm likely going to give a more opinionated perspective on where I think we're going in another post. 
 
- <!-- As we continue to explore and harness the potential of Generative AI, we can look forward to a future where technology is not just a tool, but a partner in our creative process. 
- 
+Thanks for reading.
 
-Ok, but why does this feel different?
-- Democratization of AI
-- Creating things that appear to be more than just one output
-- Conversationality (it understands me)
-- This is my opinion
-- Parallels between industrial revolution for physical work, AI revolution for mental work. Thoughts are complex so objectivity is much more difficult
-- Capitalism outro?
- -->
-
-*This is not to take away the impact of Recommendation Systems, which has been enormous and keeps affecting our societies today. You can read more about this in my more opinionated mini-blog on AI impacts.
+**This is not to take away the impact of Recommendation Systems, which has been enormous and keeps affecting our societies today. You can read more about this in my more opinionated mini-blog on AI impacts (in the works).*
 
 ***To be clear: Image generation tools are a little further away from being formally used in a professional setting. Reason being they suck. Read [here](https://github.blog/2023-10-27-developers-are-the-first-group-to-adopt-ai-at-work-heres-why-that-matters/) on why developers are the first workers using AI tools first*
