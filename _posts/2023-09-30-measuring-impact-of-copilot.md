@@ -1,11 +1,8 @@
 ---
-title: "Measuring the Impact of GitHub Copilot"
+title: "How can I measure the effectiveness of GitHub Copilot for my Enterprise?"
 categories:
 - GitHub
 ---
-
-How can I measure the effectiveness of GitHub Copilot for my Enterprise?
-========================================================================
 
 GitHub Copilot is a great tool that can be used to improve the productivity of developers, and with GitHub experimenting with new ways of boosting productivity and developer experience through AI, it is likely that Copilot will be used more and more in the future.
 
