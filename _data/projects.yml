@@ -1,0 +1,11 @@
+- name: GitHub Universe Talk 2023
+  description: In November 2023, I gave a talk at GitHub Universe about rolling effectively scaling out GitHub Actions with a customer of mine - TELUS (large telco in Canada). Was a great opportunity to present and collaborate with the wonderful Katie from TELUS.
+  image: /assets/labor/github-universe-2023.png
+  link: labor/github-universe-2023
+
+- name: Project 2
+  description: Description of Project 2
+  image: /path/to/image2.jpg
+  link: http://example.com/project2
+
+# Add more projects as needed...

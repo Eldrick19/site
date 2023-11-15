@@ -32,6 +32,22 @@ styles: true
 
 }
 
+.project-row {
+    display: flex;
+}
+
+.project-column {
+    flex: 50%;
+    padding: 5px;
+    &:not(:first-child) {
+        margin-left: 100px; // Adjust as needed
+    }
+}
+
+.project-description {
+    font-size: 0.8em;
+}
+
 // Background colours
 $featureBackgroundColour: rgba(0, 0, 0, 0.7) !default;
 $accentColour: #D2B48C !default;
