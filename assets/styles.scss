@@ -48,6 +48,18 @@ styles: true
     font-size: 0.8em;
 }
 
+// .group-name {
+//     // Dark red color for text
+//     color: #654321;
+// }
+
+.project-image {
+    transition: opacity 0.2s ease-in-out;
+}
+.project-image:hover {
+    opacity: 0.7;
+}
+
 // Background colours
 $featureBackgroundColour: rgba(0, 0, 0, 0.7) !default;
 $accentColour: #D2B48C !default;

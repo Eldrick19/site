@@ -1,11 +1,45 @@
-- name: GitHub Universe Talk 2023
-  description: In November 2023, I gave a talk at GitHub Universe about rolling effectively scaling out GitHub Actions with a customer of mine - TELUS (large telco in Canada). Was a great opportunity to present and collaborate with the wonderful Katie from TELUS.
-  image: /assets/labor/github-universe-2023.png
-  link: labor/github-universe-2023
+# Images in /assets/labor/
 
-- name: Project 2
-  description: Description of Project 2
-  image: /path/to/image2.jpg
-  link: http://example.com/project2
+- name: GitHub Universe Talk 2023
+  description: In November 2023, I gave a talk at GitHub Universe about rolling effectively scaling out GitHub Actions with a customer of mine - TELUS (large telco in Canada).
+  image: /assets/labor/github-universe-2023.png
+  link: https://www.youtube.com/watch?v=hmihAMrMdz8
+  category: Work
+
+- name: Member Privilege Program Revamp
+  description: At the Canadian Chamber of Commerce in Hong Kong. I took about 3 weeks to revamp the entire program from scratch by contacting members and building the website.
+  image: /assets/labor/member-privilege-program.jpg
+  link: https://www.cancham.org/memberprivileges/
+  category: Work
+
+- name: Unauthenticated User Experience
+  description: As a Product intern on the Recommendation System Team, I was in charge of working with the Credit Card team and our engineers to deliver offers to Credit Karma users.
+  link: https://www.creditkarma.com/credit-cards
+  image: /assets/labor/credit-karma.jpeg
+  category: Work
+
+- name: Inventory Management Optimization
+  description: A project for Groupe Kirène, a CPG company, to onboard an ERP into the company for inventory management. 
+  link: /assets/labor/work-term-report-kirene.pdf
+  image: /assets/labor/kirene.jpeg
+  category: Work
+
+- name: E-Sports Highlights Generator
+  description: Highlight tool that takes in video game footage and auto-generates highlights - Uses NLP, neural networks on amplitude/frequency, and other machine learning techniques. 
+  link: https://github.com/mattlianje/climactic#climactic
+  image: /assets/labor/highlights.jpeg
+  category: Personal
+
+- name: Fake News Detector
+  description: A collection of scripts that use large datasets to find trends in 'Fake News' from various articles, using both the Apriori and PRIMS data science algorithms.
+  link: https://github.com/Eldrick19/didactic-lamp
+  image: /assets/labor/fake-news.jpeg
+  category: Personal
+
+- name: Trucking Optimization in Toronto
+  description: Created a model meant to optimize the allocation of city bikes at each station in Toronto, with the trucks moving these bikes around taken into consideration.
+  link: https://github.com/mattlianje/amiable-riptide
+  image: /assets/labor/trucking-optimization.jpeg
+  category: Personal
 
 # Add more projects as needed...
