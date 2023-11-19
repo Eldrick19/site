@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Things I've done or am doing"
+title: "Some Things I've Done"
 ---
 
 {% assign grouped_projects = site.data.projects | group_by:"category" %}
