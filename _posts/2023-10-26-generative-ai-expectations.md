@@ -54,9 +54,9 @@ Another example is in Finance. Banks are using prediction algorithms in the form
 
 There are a [variety of other applications of AI](https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence#Finance), but I think this helps me get my point across. With AI/ML so far we have been able to create applications that can either suggest outputs to users which are low risk, or use these outputs to themselves perform high risk actions. So revisiting our buckets:
 
-- Suggestive: augment human ability by processing a ton of information, outputting a result to a person, and letting this person make a decision and take action. 
+- **Suggestive**: augment human ability by processing a ton of information, outputting a result to a person, and letting this person make a decision and take action. 
 
-- Authoritative: bypass human input by processing information, outputting a result, and making decision/take action based on this result.
+- **Authoritative**: bypass human input by processing information, outputting a result, and making decision/take action based on this result.
 
 So what's new here, where does GenAI fall?
 --------------------
@@ -69,7 +69,7 @@ What do I mean by this? It is straightforward, albeit difficult, to teach an alg
 
 Generating a legal document based on requirements passed on by an end-user is a much more difficult thing to teach an AI to do correctly in an objective manner though. And that's not even considering the risk of the AI missing some use cases and allowing for legal loopholes or potentially putting the user in a precarious legal position. Generating content based on a provided input can be very subjective, and the impacts are far greater than other forms of AI depending on how it's used.*
 
-## Ex Machina or word-probability machine?
+### Ex Machina or word-probability machine?
 
 If you're not familiar with how GenAI tools like ChatGPT work, it's a very deceptive but effective form of "intelligence". OpenAIs LLMs that are used for apps like ChatGPT don't really understand what is being output. When outputting a response, the LLM determines the probability of a word following another one based on the prompt. For each word being output, it is (lightning-fast) determining the next most likely word. It's doing this on a word-by-word basis and doesn't "understand" it's output. It didn't vet it in it's brain to make sure it makes sense, as we humans do before speaking - or at least we should. 
 
@@ -89,7 +89,7 @@ Given all this background on its risks, and use cases, is it even useful? Yes, t
 
 Let's take a look at how it helps you accomplish faster:
 
-## Data Sources
+### Data Sources
 
 GenAI will have 3 broad sources of information:
 - Dataset
@@ -102,7 +102,11 @@ The context is any personalized data source you can plug into the tool. Generati
 
 The prompt is how you ask the AI what to do, the instructions you pass. Prompts are the most mutable portion of this equation, and is why a lot of attention is being put into concepts like [prompt engineering](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-prompt-engineering). Clearly communicating what you need from the tool is the best way to increase success
 
-## Can rough drafts be perfect?
+Microsoft did a good job at illustrating this trifecta for the M365 Copilot. With the prompt top left, context bottom left, and dataset on the right:
+
+![M365 Copilot]({{ site.baseurl }}/assets/blog/2023-10-26-generative-ai-expectations/m365-copilot-data-sources.png)
+
+### Can rough drafts be perfect?
 
 With these 3 data sources you're off to the races. The GenAI tool will use it's powerful neural network to output what it thinks meets best your needs. Here is where the main expectation-setting comes in: **you should treat any output as n initial, rough draft**.
 
@@ -112,13 +116,16 @@ As GitHub makes clear - tools like Copilot cannot replace development or the wor
 
 It would not be honest for an application to claim AI-generated content to be able to create content without human vetting, given the complexity and risk mentioned earlier. This is a tool in a human's toolbelt today. There's a reason GitHub named it Copilot and not Autopilot. 
 
-## What it's doing *for me*
+### What it's doing *for me*
 
 As a worker therefore, I expect GenAI to be used to create rough drafts of the any final product I'm working on, with me going through that draft and making the necessary adjustments. When evaluating if any of these tools is useful to me then, the mathematical theory I'm trying to validate is:
 
-> Prompting + Suggestion Time + Vetting Time <= Time to do it myself
+> Prompting + Suggestion Time + Vetting Time <u><</u> Time to do it myself
 
 If the sum of them time it takes for me to explain to the AI what I want it to do, the time it takes to process and respond, and the time it takes for me to vet the first draft is less than the time it takes me to do it myself - there is value. This is why I say GenAI tools are productivity tools first and foremost, the goal is to make you accomplish your goals faster. 
+
+![Equation]({{ site.baseurl }}/assets/blog/2023-10-26-generative-ai-expectations/equation.png)
+
 
 This is also the claim companies selling GenAI tools are making, and the evidence from [research is more and more leaning towards this being true](https://www.forbes.com/sites/glenngow/2023/07/02/chatgpt-and-generative-ai-what-to-do-with-all-the-productivity/?sh=401bcd973edc).
 
@@ -126,7 +133,7 @@ What you'll find is that GenAI doesn't have to be used everywhere and for all ta
 
 As an individual, the main ramping you'll have to do with these tools, aside from learning how to prompt them, is learning what use cases GenAI can actually help speed you up with.
 
-## Happy Accidents
+### Happy Accidents
 
 GenAI can also have some side effects. For example tools like GitHub Copilot are being shown to help with [code quality](https://github.blog/2023-10-10-research-quantifying-github-copilots-impact-on-code-quality/#:~:text=Our%20research%20found%20that%20the,Copilot%20and%20GitHub%20Copilot%20Chat.) on top of productivity.
 
@@ -159,4 +166,4 @@ Thanks for reading.
 
 **This is not to take away the impact of Recommendation Systems, which has been enormous and keeps affecting our societies today. You can read more about this in my more opinionated mini-blog on AI impacts (in the works).*
 
-***To be clear: Image generation tools are a little further away from being formally used in a professional setting. Reason being they suck. Read [here](https://github.blog/2023-10-27-developers-are-the-first-group-to-adopt-ai-at-work-heres-why-that-matters/) on why developers are the first workers using AI tools first*
+***To be clear: Image generation tools are a little further away from being formally used in a professional setting. Reason being they suck, in my opinion. Read [here](https://github.blog/2023-10-27-developers-are-the-first-group-to-adopt-ai-at-work-heres-why-that-matters/) on why developers are the first workers using AI tools first*
