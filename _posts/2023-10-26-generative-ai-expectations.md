@@ -149,7 +149,7 @@ The improvements in things like code quality though come from the second bucket:
 
 But even when synthesizing content I should be vetting. I may not need to if it's low impact (e.g. Copilot explains to me how to initialize a VueJS project using the Vue CLI). But when it could be higher impact I may need to do it. For example, if ChatGPT is summarizing a report, I can read the summary provided, but still refer back to and skim portions of the document to make sure it's not missing anything.
 
-Again the uses cased I'm referring to are code related due to where I work, but this can flow down to other industries as well. What if image generation tools (once they start being able to draw hands and shading correctly) allow me to become a better artist by learning 3D concepts and iterating on images faster?**
+Again the use cases I'm referring to are code related due to where I work, but this can flow down to other industries as well. What if image generation tools (once they start being able to draw hands and shading correctly) allow me to become a better artist by learning 3D concepts and iterating on images faster?**
 
 Conclusion
 ----------
