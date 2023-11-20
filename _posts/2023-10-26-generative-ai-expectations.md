@@ -4,7 +4,7 @@ categories:
 - GitHub
 ---
 
-So! You're either evaluating or have started using a generative AI tool for your work. Or you've just head everyone talk about how amazing ChatGPT is and you're sick of it. If you wanted to use a generative AI tool, how are you supposed to use it exactly? Should you even be using a tool for ___ task? 
+So! You're either evaluating or have started using a generative AI tool for your work. Or you've just heard everyone talk about how amazing ChatGPT is and you're sick of it. If you wanted to use a generative AI tool, how are you supposed to use it exactly? Should you even be using a tool for ___ task? 
 
 I've been having discussions about generative AI A LOT recently. I'm a Solutions Engineer at GitHub, and that means I get to work with customers as they're evaluating [GitHub Copilot](https://github.com/features/copilot). If you're not familiar, we're explaining it as an AI pair programmer that will help developers write better code faster. My experience has mostly been with GitHub Copilot, but I think what I'm going to discuss today applies to any type of generative AI. I've played with Bard, Bing AI, and some image generation ones (Canva AI). I'll call out any caveats if necessary.
 
@@ -118,7 +118,7 @@ It would not be honest for an application to claim AI-generated content to be ab
 
 ### What it's doing *for me*
 
-As a worker therefore, I expect GenAI to be used to create rough drafts of the any final product I'm working on, with me going through that draft and making the necessary adjustments. When evaluating if any of these tools is useful to me then, the mathematical theory I'm trying to validate is:
+As a worker, I therefore expect GenAI to be used to create rough drafts of the any final product I'm working on, with me going through that draft and making the necessary adjustments. When evaluating if any of these tools is useful to me then, the mathematical theory I'm trying to validate is:
 
 > Prompting + Suggestion Time + Vetting Time <u><</u> Time to do it myself
 
