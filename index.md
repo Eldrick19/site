@@ -16,12 +16,12 @@ I'm passionate about a couple of things: building products with people, developm
 
 You can check out some of the things I've worked on or doing either at my:
 
-- ["Labor" page](/labor/)
+- ["Labor" page](/site/labor/)
 - GitHub profile: [@eldrick19](https://github.com/eldrick19)
 - LinkedIn profile: [@Eldrick-Wega](https://www.linkedin.com/in/eldrick-wega/)
 
 ### What I'm thinking about 🤔
 
-I'll write on a bunch of things. [Check them out](/blog/)
+I'll write on a bunch of things. [Check them out](/site/blog/)
 
 
