@@ -31,7 +31,7 @@ Recommendation systems, which have such a strong impact on us as individuals in 
 
 The almighty "algorithm". Whether it's TikTok's crazy algorithm that is able to seize the attention of anyone that spends more than a couple of minutes or Amazon's system based on [item-to-item collaborative filtering](https://www.amazon.science/the-history-of-amazons-recommendation-algorithm) (fascinating read by the way), this is embedded in so many platform tools.
 
-The use case of Recommendation Systems, from the end user's perspective, is **suggestive**. It's particularly useful to have the app you're using suggest products/services from an overwhelming catalogue of things you can choose from. As a business developing these systems, you are trusting your algorithm to output something (a suggestion) directly to the end user without human vetting. This suggestion is usually distilled to something simple - i.e. the product-id that is most likely to be purchased.
+The use case of Recommendation Systems, from the end user's perspective, is **suggestive**. It's particularly useful to have the app you're using suggest products/services from an overwhelming catalog of things you can choose from. As a business developing these systems, you are trusting your algorithm to output something (a suggestion) directly to the end user without human vetting. This suggestion is usually distilled to something simple - i.e. the product-id that is most likely to be purchased.
 
 I consider an AI output to be suggestive especially if the risk of it's output is low and can easily be ignored. When Amazon suggests a specific screen protector alongside a phone case, the potential damage of a user seeing that suggestion and not agreeing with it is extremely low. At worst, a wrong suggestion is mild annoyance. At best, they buy another new product. It's low risk.
 
@@ -44,7 +44,7 @@ Keep this suggestive aspect in mind as we loop back to GenAI.
 
 ### Prediction Algorithms
 
-Recommendations systems, mentioned above, are just one application of predictive machine learning. Using vast amounts of data to predict an output is not unique to just buying product or watching fun videos. 
+Recommendations Systems, mentioned above, are just one application of predictive machine learning. Using vast amounts of data to predict an output is not unique to just buying a product or watching fun videos. 
 
 Under the umbrella of AI sits predictive machine learning, and under that umbrella sits prediction algorithms. These are usually used by businesses and don't involve creating an output for an end user to interact with. They are also higher risk.
 
@@ -65,17 +65,17 @@ Generative AI itself is a huge step, mainly as a new powerful application of AI.
 
 Each of these modalities mentioned earlier (text, image, video, speech, etc.) are extremely complex, and objectivity of the correct "output" here is even more difficult to reliably teach a computer.
 
-What do I mean by this? It is straightforward, albeit difficult, to teach an algorithm that a video-id should be shown next to a TikTok user. You're basing that decision on a ton of information (video category, user details, etc.) but the output is distilled to something specific: video-id that will increase X metric (usually engagement). The potential risk of a wrong decision here is also low as mentioned earlier, as the worst case is the user just moves on to the next video and gives your more information.
+What do I mean by this? It is straightforward, albeit difficult, to teach an algorithm that a video-id should be shown next to a TikTok user. You're basing that decision on a ton of information (video category, user details, etc.) but the output is distilled to something specific: video-id that will increase X metric (usually engagement). The potential risk of a wrong decision here is also low as mentioned earlier, as the worst case is the user just moves on to the next video and gives you more information.
 
 Generating a legal document based on requirements passed on by an end-user is a much more difficult thing to teach an AI to do correctly in an objective manner though. And that's not even considering the risk of the AI missing some use cases and allowing for legal loopholes or potentially putting the user in a precarious legal position. Generating content based on a provided input can be very subjective, and the impacts are far greater than other forms of AI depending on how it's used.*
 
 ### Ex Machina or word-probability machine?
 
-If you're not familiar with how GenAI tools like ChatGPT work, it's a very deceptive but effective form of "intelligence". OpenAIs LLMs that are used for apps like ChatGPT don't really understand what is being output. When outputting a response, the LLM determines the probability of a word following another one based on the prompt. For each word being output, it is (lightning-fast) determining the next most likely word. It's doing this on a word-by-word basis and doesn't "understand" it's output. It didn't vet it in it's brain to make sure it makes sense, as we humans do before speaking - or at least we should. 
+If you're not familiar with how GenAI tools like ChatGPT work, it's a very deceptive but effective form of "intelligence". OpenAIs LLMs that are used for apps like ChatGPT don't really understand what is being output. When outputting a response, the LLM determines the probability of a word following another one based on the prompt. For each word being output, it is (lightning-fast) determining the next most likely word. It's doing this on a word-by-word basis and doesn't "understand" its output. It didn't vet it in it's brain to make sure it makes sense, as we humans do before speaking - or at least we should. 
 
-Generative Adversarial Networks (GANs) get around this problem somewhat. Vetting any output (or having a "check" as part of the model) is especially useful when creating image content. But not everyone is implementing especially when it comes to text based content. You can read more about GANs [here](https://github.blog/2023-04-07-what-developers-need-to-know-about-generative-ai/).
+Generative Adversarial Networks (GANs) get around this problem somewhat. Vetting any output (or having a "check" as part of the model) is especially useful when creating image content. But not everyone is implementing these, especially when it comes to text-based content. You can read more about GANs [here](https://github.blog/2023-04-07-what-developers-need-to-know-about-generative-ai/).
 
-My point is this: generating content is not only subjective and a higher level of complexity than other applications of AI in the past, it's impacts and risks are also immediately apparent to the end user. For these 2 reasons, GenAI's applications today are mostly **suggestive**. It would not be responsible to expect it to do anything more than suggesting outputs at this time.
+My point is this: generating content is not only subjective and a higher level of complexity than other applications of AI in the past, its impacts and risks are also immediately apparent to the end user. For these 2 reasons, GenAI's applications today are mostly **suggestive**. It would not be responsible to expect it to do anything more than suggesting outputs at this time.
 
 This will likely change in the future as we gain confidence in these LLMs, but if and when this is viable is a question I don't have the answer to.
 
@@ -108,11 +108,11 @@ Microsoft did a good job at illustrating this trifecta for the M365 Copilot. Wit
 
 ### Can rough drafts be perfect?
 
-With these 3 data sources you're off to the races. The GenAI tool will use it's powerful neural network to output what it thinks meets best your needs. Here is where the main expectation-setting comes in: **you should treat any output as n initial, rough draft**.
+With these 3 data sources you're off to the races. The GenAI tool will use its powerful neural network to output what it thinks meets your needs best. Here is where the main expectation-setting comes in: **you should treat any output as an initial, rough draft**.
 
 From conversations with developers (friends, colleagues, and customers alike), a common misconception I'm seeing is the immediate comparison between these tools and human developers.
 
-As GitHub makes clear - tools like Copilot cannot replace development or the work developers do. It can only make existing developer more productive by outputting what should be considered rough drafts of code for them to get started with. The same applies to image generators and artists, writers and scripts, etc. You should not expect your first rough draft of an essay to be submission-ready. You should not expect an AI-generated rough draft to be perfect.
+As GitHub makes clear - tools like Copilot cannot replace development or the work developers do. It can only make existing developers more productive by outputting what should be considered rough drafts of code for them to get started with. The same applies to image generators and artists, writers and scripts, etc. You should not expect your first rough draft of an essay to be submission-ready. You should not expect an AI-generated rough draft to be perfect.
 
 It would not be honest for an application to claim AI-generated content to be able to create content without human vetting, given the complexity and risk mentioned earlier. This is a tool in a human's toolbelt today. There's a reason GitHub named it Copilot and not Autopilot. 
 
@@ -122,7 +122,7 @@ As a worker therefore, I expect GenAI to be used to create rough drafts of the a
 
 > Prompting + Suggestion Time + Vetting Time <u><</u> Time to do it myself
 
-If the sum of them time it takes for me to explain to the AI what I want it to do, the time it takes to process and respond, and the time it takes for me to vet the first draft is less than the time it takes me to do it myself - there is value. This is why I say GenAI tools are productivity tools first and foremost, the goal is to make you accomplish your goals faster. 
+If the sum of the time it takes for me to explain to the AI what I want it to do, the time it takes to process and respond, and the time it takes for me to vet the first draft is less than the time it takes me to do it myself - there is value. This is why I say GenAI tools are productivity tools first and foremost, the goal is to make you accomplish your goals faster. 
 
 ![Equation]({{ site.baseurl }}/assets/blog/2023-10-26-generative-ai-expectations/equation.png)
 
@@ -137,7 +137,7 @@ As an individual, the main ramping you'll have to do with these tools, aside fro
 
 GenAI can also have some side effects. For example tools like GitHub Copilot are being shown to help with [code quality](https://github.blog/2023-10-10-research-quantifying-github-copilots-impact-on-code-quality/#:~:text=Our%20research%20found%20that%20the,Copilot%20and%20GitHub%20Copilot%20Chat.) on top of productivity.
 
-These side effects, in my opinion, arise from use cases with this application of AI. A large part of labor today has to do with creating content for our peers to consume (A report encompassing decisions we've made, code, artwork for a new characters concept). A lot of labor is also understanding/distilling the content provided to us (issues a medical patient is reporting, code, a recorded meeting between colleagues) and making a decision based off of it. I grossly oversimplify by bucketing these into 2 groups:
+These side effects, in my opinion, arise from use cases with this application of AI. A large part of labor today has to do with creating content for our peers to consume (A report encompassing decisions we've made, code, artwork for a new character's concept). A lot of labor is also understanding/distilling the content provided to us (issues a medical patient is reporting, code, a recorded meeting between colleagues) and making a decision based off of it. I grossly oversimplify by bucketing these into 2 groups:
 - Content Generation
 - Content Synthesis
 
@@ -145,7 +145,7 @@ As you can tell I like breaking things into categories :)
 
 GenAI is still creating something new every time based on your prompt, and it helps with the productivity formula I showed earlier for both.
 
-The improvements in things like code quality though come from the second bucket: Content Synthesis. If it takes less time for me to ask an AI tool how to best implement something, or what the summary of what I'm looking at does, it can make me a better ___ faster. GitHub Copilot can help me become a better developer faster, for example, by speeding up the synthesis of new information, leading me to write better code. 
+The improvements in things like code quality, though, come from the second bucket: Content Synthesis. If it takes less time for me to ask an AI tool how to best implement something, or what the summary of what I'm looking at does, it can make me a better ___ faster. GitHub Copilot can help me become a better developer faster, for example, by speeding up the synthesis of new information, leading me to write better code. 
 
 But even when synthesizing content I should be vetting. I may not need to if it's low impact (e.g. Copilot explains to me how to initialize a VueJS project using the Vue CLI). But when it could be higher impact I may need to do it. For example, if ChatGPT is summarizing a report, I can read the summary provided, but still refer back to and skim portions of the document to make sure it's not missing anything.
 
