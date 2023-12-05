@@ -4,7 +4,7 @@ layout: page
 
 ## Reading Currently 
 
-- People's Republic of Walmart
+- Precolonial Black Africa
 - Class Struggle in Africa 
 
 ## Books I've read
@@ -23,3 +23,4 @@ layout: page
 - Beating the Odds
 - Principles of Product Management
 - Women's Liberation and the African Freedom Struggle
+- People's Republic of Walmart
